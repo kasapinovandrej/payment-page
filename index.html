@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <script defer src="script.js"></script>
+    <title>Payment Page</title>
+</head>
+
+<body>
+    <header class="header">
+        <img src="images/LocalFlirt-logo-1-mod1.svg" alt="localflirt logo" height="45">
+    </header>
+    <main class="content">
+        <h1>You are about to order Platinum Membership for 53.70 USD biannually</h1>
+        <div class="wrapper">
+            <article class="card details">
+                <form action="" class="form">
+                    <div class="form-wrapper">
+                        <div class="input-box">
+                            <h2>Card Details</h2>
+                            <div class="input-field">
+                                <label for="cardholder">Cardholder Name</label>
+                                <input type="text" id="cardholder" name="cardholder" required>
+                            </div>
+                            <div class="input-field">
+                                <label for="cardnumber">Card Number</label>
+                                <input type="tel" inputmode="numeric" id="cardnumber" name="cardnumber" maxlength="19"
+                                    required pattern="[0-9\s]{13,19}">
+                            </div>
+                            <div class="input-field">
+                                <label for="">Expiration date</label>
+                                <div class="select-box">
+                                    <select name="month" class="select select-month" required>
+                                        <option value="" disabled selected>Month</option>
+                                        <option value="01">01</option>
+                                        <option value="02">02</option>
+                                        <option value="03">03</option>
+                                        <option value="04">04</option>
+                                        <option value="05">05</option>
+                                        <option value="06">06</option>
+                                        <option value="07">07</option>
+                                        <option value="08">08</option>
+                                        <option value="09">09</option>
+                                        <option value="10">10</option>
+                                        <option value="11">11</option>
+                                        <option value="12">12</option>
+                                    </select>
+                                    <select name="year" class="select select-year" required>
+                                        <option value="" disabled selected>Year</option>
+                                        <option value="22">22</option>
+                                        <option value="23">23</option>
+                                        <option value="24">24</option>
+                                        <option value="25">25</option>
+                                        <option value="26">26</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="input-field">
+                                <label class="cvv-label" for="cvv">CVV<span class="cvv-questionmark">?</span></label>
+                                <input type="number" id="cvv" name="cvv">
+                            </div>
+                        </div>
+                        <div class="img-box">
+                            <div class="card-types">
+                                <img src="images/Visa.png" alt="Visa">
+                                <img src="images/Mastercard.png" alt="Mastercard">
+                                <img src="images/American Express.png" alt="American Express">
+                                <img src="images/Discover.png" alt="Discover">
+                            </div>
+                            <img class="card-example" src="images/card.png" alt="Card example">
+                        </div>
+                    </div>
+                    <div class="btn-box">
+                        <input type="submit" value="pay now $53.70" class="btn">
+                        <img src="images/trusted-logos.png" alt="trusted logos" class="trusted-logos">
+                        <div class="secure">
+                            <img src="images/lock-image.png" alt="lock image">
+                            <p>100% SAFE, DISCREET & SECURE PAYMENT</p>
+                        </div>
+                        <p class="namehere">We care about your privacy thus all payments made on the site will show as
+                            “NAMEHERE” on your
+                            card statement
+                        </p>
+                    </div>
+                </form>
+            </article>
+            <aside class="card summary">
+                <h2>Summery</h2>
+                <div>
+                    <div class="summary-infobox">
+                        <p>Membersgip</p>
+                        <p class="bolder-text">Platinum</p>
+                    </div>
+                    <div class="summary-infobox">
+                        <p>Due Today</p>
+                        <p class="bolder-text">$53.70 Bi-Annually</p>
+                    </div>
+                </div>
+                <p class="info-text">Your payment on the site will show as “NAMEHERE” on your card statement
+                </p>
+            </aside>
+        </div>
+        <div class="safe-box">
+            <div class="safe-info">
+                <img src="images/safe-info.png" alt="Safe">
+                <h4>Your Information is Safe</h4>
+                <p>We will not sell or rent your personal contact information for any marketing purposes whatsoever.</p>
+            </div>
+            <div class="safe-info">
+                <img src="images/secure-payment.png" alt="secure payment">
+                <h4>Secure Payment</h4>
+                <p>All information is encrypted and transmitted without risk using a Secure Sockets Layer protocol. You
+                    can trust us!</p>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="basic-footer">
+            <div class="logo-box">
+                <img src="images/LocalFlirt-logo-1-mod1.svg" alt="logo">
+                <p>
+                    FlirtingNearYou is a discreet and satisfying place to live out your wildest desires! Flirt and
+                    meet
+                    with
+                    like-minded adults near you now.
+                </p>
+            </div>
+            <div class="links-box">
+                <div class="links-column">
+                    <h5>Quick Links</h5>
+                    <a href="#">About Us</a>
+                    <a href="#">FAQs</a>
+                    <a href="#">Pricing</a>
+                    <a href="#">Contact Us</a>
+                </div>
+                <div class="links-column">
+                    <h5>Quick Links</h5>
+                    <a href="#">About Us</a>
+                    <a href="#">FAQs</a>
+                    <a href="#">aricing</a>
+                    <a href="#">Contact Us</a>
+                </div>
+                <div class="links-column">
+                    <h5>Corporation</h5>
+                    <p>Gochamie Inc</p>
+                    <p>20 North Orange Avenue Suite 1100</p>
+                    <p>Orlando, FL 32801</p>
+                    <p>877-381-0324</p>
+                </div>
+            </div>
+        </div>
+        <div class="copyright-footer">
+            <div class="copyright-footer-content">
+                <p>
+                    Copyright © 2021 LocalFlirt. All Rights Reserved.
+                </p>
+                <div class="support-links">
+                    <a href="#">Terms and Conditions</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Support</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
