@@ -7,7 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <script defer src="script.js"></script>
@@ -16,16 +19,15 @@
 
 <body>
     <header class="header">
-        <img src="images/LocalFlirt-logo-1-mod1.svg" alt="localflirt logo" height="45">
+        <img src="images/logo_localflirt_white.svg" alt="localflirt logo" height="45">
     </header>
     <main class="content">
-        <h1>You are about to order Platinum Membership for 53.70 USD biannually</h1>
         <div class="wrapper">
             <article class="card details">
                 <form action="" class="form">
+                    <h2>Card Details</h2>
                     <div class="form-wrapper">
                         <div class="input-box">
-                            <h2>Card Details</h2>
                             <div class="input-field">
                                 <label for="cardholder">Cardholder Name</label>
                                 <input type="text" id="cardholder" name="cardholder" required>
@@ -60,11 +62,18 @@
                                         <option value="24">24</option>
                                         <option value="25">25</option>
                                         <option value="26">26</option>
+                                        <option value="26">27</option>
+                                        <option value="26">28</option>
+                                        <option value="26">29</option>
+                                        <option value="26">30</option>
                                     </select>
                                 </div>
                             </div>
-                            <div class="input-field">
-                                <label class="cvv-label" for="cvv">CVV<span class="cvv-questionmark">?</span></label>
+                            <div class="input-field cvv">
+                                <label class="cvv-label " for="cvv">CVV<span class="cvv-questionmark">?</span></label>
+                                <span class="cvv-questionmark-info">
+                                    The 3 digit security code on the back of your card
+                                </span>
                                 <input type="number" id="cvv" name="cvv">
                             </div>
                         </div>
@@ -72,12 +81,27 @@
                             <div class="card-types">
                                 <img src="images/Visa.png" alt="Visa">
                                 <img src="images/Mastercard.png" alt="Mastercard">
-                                <img src="images/American Express.png" alt="American Express">
-                                <img src="images/Discover.png" alt="Discover">
                             </div>
-                            <img class="card-example" src="images/card.png" alt="Card example">
+                            <div class="flip-card">
+                                <div class="flip-card-inner">
+                                    <div class="flip-card-front">
+                                        <img class="card-example" src="images/card.png" alt="Card example">
+                                    </div>
+                                    <div class="flip-card-back">
+                                        <img class="card-example" src="images/card2.png" alt="Card back example">
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
+                    <p class="confirmation-text">
+                        <input type="checkbox" name="" id="" class="checkbox"> By completing this order I confirm
+                        that I am 18 (some locations 21) years or older and agree
+                        wih the <a href="#">Privacy</a> statement and <a href="#">Terms & Conditions</a> and that I will
+                        be charged
+                        $53.70 for 180
+                        days and then $53.70 recurring every 180 days until I cancel
+                    </p>
                     <div class="btn-box">
                         <input type="submit" value="pay now $53.70" class="btn">
                         <img src="images/trusted-logos.png" alt="trusted logos" class="trusted-logos">
@@ -85,10 +109,6 @@
                             <img src="images/lock-image.png" alt="lock image">
                             <p>100% SAFE, DISCREET & SECURE PAYMENT</p>
                         </div>
-                        <p class="namehere">We care about your privacy thus all payments made on the site will show as
-                            “NAMEHERE” on your
-                            card statement
-                        </p>
                     </div>
                 </form>
             </article>
@@ -96,17 +116,22 @@
                 <h2>Summery</h2>
                 <div>
                     <div class="summary-infobox">
-                        <p>Membersgip</p>
+                        <p>Membership</p>
                         <p class="bolder-text">Platinum</p>
                     </div>
                     <div class="summary-infobox">
                         <p>Due Today</p>
-                        <p class="bolder-text">$53.70 Bi-Annually</p>
+                        <p class="bolder-text">$53.70</p>
                     </div>
                 </div>
                 <p class="info-text">Your payment on the site will show as “NAMEHERE” on your card statement
                 </p>
             </aside>
+        </div>
+        <div class="text-box">
+            <p class="namehere">We care about your privacy thus all payments made on the site will show as DESCRIPTOR on
+                your card statement
+            </p>
         </div>
         <div class="safe-box">
             <div class="safe-info">
@@ -124,37 +149,28 @@
     </main>
     <footer class="footer">
         <div class="basic-footer">
-            <div class="logo-box">
-                <img src="images/LocalFlirt-logo-1-mod1.svg" alt="logo">
-                <p>
-                    FlirtingNearYou is a discreet and satisfying place to live out your wildest desires! Flirt and
-                    meet
-                    with
-                    like-minded adults near you now.
-                </p>
+            <div class="links-column">
+                <h5>Quick Links</h5>
+                <a href="/about" target="_blank">About Us</a>
+                <a href="/faq" target="_blank">FAQs</a>
+                <a href="/pricing" target="_blank">Pricing</a>
+                <a href="/contact" target="_blank">Contact Us</a>
             </div>
-            <div class="links-box">
-                <div class="links-column">
-                    <h5>Quick Links</h5>
-                    <a href="#">About Us</a>
-                    <a href="#">FAQs</a>
-                    <a href="#">Pricing</a>
-                    <a href="#">Contact Us</a>
-                </div>
-                <div class="links-column">
-                    <h5>Quick Links</h5>
-                    <a href="#">About Us</a>
-                    <a href="#">FAQs</a>
-                    <a href="#">aricing</a>
-                    <a href="#">Contact Us</a>
-                </div>
-                <div class="links-column">
-                    <h5>Corporation</h5>
-                    <p>Gochamie Inc</p>
-                    <p>20 North Orange Avenue Suite 1100</p>
-                    <p>Orlando, FL 32801</p>
-                    <p>877-381-0324</p>
-                </div>
+            <div class="logo-box">
+                <img src="images/LocalFlirt-red-logo-1-mod1.svg" alt="logo">
+                <p>
+                    FlirtingNearYou is a discreet and satisfying place to live out your wildest desires!
+                </p>
+                <p>Flirt and meet with like-minded adults near you now</p>
+                <p class="address">Gochamie Inc, 20 North Orange Avenue Suite 1100,Orlando, FL 32801 </p>
+                <a class="phone" href="tel:+8773810324">877-381-0324</a>
+            </div>
+            <div class="links-column">
+                <h5>your account</h5>
+                <a href="#">My Favorites</a>
+                <a href="#">My Visitors</a>
+                <a href="#">Get More Credits</a>
+                <a href="#">Sign Out</a>
             </div>
         </div>
         <div class="copyright-footer">
@@ -163,9 +179,9 @@
                     Copyright © 2021 LocalFlirt. All Rights Reserved.
                 </p>
                 <div class="support-links">
-                    <a href="#">Terms and Conditions</a>
-                    <a href="#">Privacy Policy</a>
-                    <a href="#">Support</a>
+                    <a href="/terms-and-condition" target="_blank">Terms and Conditions</a>
+                    <a href="/privacy-policy" target="_blank">Privacy Policy</a>
+                    <a href="/contact" target="_blank">Support</a>
                 </div>
             </div>
         </div>
