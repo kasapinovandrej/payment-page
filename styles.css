@@ -165,9 +165,6 @@ h2 {
   width: 40%;
 }
 
-.img-box {
-}
-
 .card-types {
   display: flex;
   margin-bottom: 30px;
@@ -191,19 +188,16 @@ h2 {
 .rotate {
   transform: rotateY(180deg);
 }
-/* .flip-card:hover .flip-card-inner {
-  transform: rotateY(180deg);
-} */
+
 .flip-card-front,
 .flip-card-back {
   position: absolute;
+  border-radius: 8px;
+  overflow: hidden;
   width: 100%;
   height: 100%;
   -webkit-backface-visibility: hidden; /* Safari */
   backface-visibility: hidden;
-}
-
-.flip-card-front {
 }
 
 .flip-card-back {
@@ -519,8 +513,6 @@ h2 {
   }
   .safe-box {
     flex-direction: column;
-  }
-  .img-box {
   }
   .card-types {
     justify-content: center;
